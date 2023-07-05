@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <title>Portofolio</title>
+    <script src="js/test.js"></script>
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="content">
+            <img src="aseets\market-transformed.png" 
+                class="img" width="70" height="50">
+            <a href="#home.html" class="home">Home</a>
+            <a href="#ourpackage.html" class="ourpackage">Our Package</a>
+            <a href="#callus.html" class="callus">Call Us</a>
+        </nav>
+        <nav class="tittle">
+            <h1 id="home.html"> Top Rated E-Groceries Shop in Indonesian</h1>
+            <h4> Every day with best ingredients</h4>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-container">
+          <section id="callUs">
+            <article id="article">
+              <img class="img-slideshow" src="aseets\buah.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\inggridient.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\cooking set.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\seasoning.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\kitchen set.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\delivery.jpg" width="600" height="500">
+              <h5>"Setiap hari beli sayur buah yang fresh disini"</h5>
+            </article>
+            <section id="profile">
+              <img src="aseets/Profile-PNG-File.png" class="profile-img" width="50" height="50">
+              <div class="profile-info">
+                <h5>Florence Hughes</h5>
+                <div class="profile-subinfo">
+                  <h6>Ibu Rumah Tangga, 28</h6>
+                </div>
+            </section>
+            <section id="describe">
+                <p class="isi">Thank you for the opportunity to provide more information about our offer. We take pride in offering a comprehensive service or product that brings numerous benefits to our customers. Here are some key points to consider:</p>
+                <div class="number"> 
+
+                </div>
+                <ol type="1">
+                    <li><b>High-Quality:</b> Our service or product is crafted with utmost care and attention to detail.</li>
+                    <li><b>Customer Satisfaction:</b> Your satisfaction is our ultimate goal. We are committed to ensuring that you have a positive experience with our service or product.</li>
+                    <li><b>Competitive Pricing:</b> Our service or product is competitively priced, offering you a cost-effective solution without compromising on quality or performance.</li>
+                </ol>
+            </section>
+          </section>
+          <section id="form">
+            <h2 id="callus.html">Contact Us</h2>
+            <h3>Sales will contact you 1x24 hours after we receive the data</h3>
+            <form action="#" method="POST" onsubmit="return validasi()">
+              <label for="name">Your Name:</label>
+              <input type="text" id="nama" name="name" placeholder="First and last name">
+              <label for="email">Email Address:</label>
+              <input type="text" id="email" name="email:" placeholder="example@email.com">
+              <label class="form1">What Are You Interested In?:</label>
+              <select id="interested" name="interested">
+                <option disabled selected value="">Select option</option>
+                <option value="Fresh Vegetable">Fresh Vegetable</option>
+                <option value="Fresh Fruit">Fresh Fruit</option>
+                <option value="Instan Delivery">Instan Delivery</option>
+                <option value="Kitchen Ingredient">Kitchen Ingredient</option>
+                <option value="Kitchen Set">Kitchen Set</option>
+                <option value="Bunding Set">Bunding Set</option>
+              </select>
+              
+              </select>
+              <button>Send</button>
+            </form>
+          </section>
+        </div>  
+      </main>
+      <div id="newContainer">
+        <h1 id="ourpackage.html">OUR PACKAGE</h1>
+    </div>
+    <div class="flexpackage">
+        <section id="vegetable"> 
+            <img src="aseets\hint.png" class="hint" width="60" height="50">
+            <div>
+                <h3> Fresh vegetable</h3>
+                <h4>Fresh vegetables direct from the best agricultural sources</h4>
+            </div>
+        </section>
+        <section id="fruit"> 
+            <img src="aseets\hint.png" class="hint" width="60" height="50">
+            <div>
+                <h3> Fresh fruit</h3>
+                <h4>Fresh fruits direct from the best agricultural sources</h4>
+            </div>
+        </section>
+        <section id="delivery">
+            <img src="aseets\hint.png" class="hint" width="60" height="50">
+            <div>
+                <h3> Instan Delivery</h3>
+                <h4>Sent instantly by couriers who have been trained with SOP to maintain your shopping conditions</h4>
+            </div>
+        </section >
+    </div>
+    <br>
+    <br>
+    <div class="flexpackage2">
+        <section id="kitchen">
+            <img src="aseets\star.png" class="star" width="50" height="50">
+            <div>
+                <h3>Kitchen Ingredient</h3>
+                <h4>Complete kitchen ingredients for your cooking needs</h4>
+            </div>
+        </section>
+        <section id="kitchenset">
+            <img src="aseets\star.png" class="star" width="50" height="50">
+            <div>
+                <h3>Kitchen Set</h3>
+                <h4>All kinds of cooking tools to help you cook</h4>
+            </div>
+        </section>
+        <section id="kitchenbunding">
+            <img src="aseets\star.png" class="star" width="50" height="50">
+            <div>
+                <h3>Bunding Set</h3>
+                <h4>Confused what to cook? Packages are available for you to cook in your kitchen</h4>
+            </div>
+        </section>
+     <br>
+     <br>
+    </div>
+    <div id="closing">
+        <h1>Experience the Convenience of Online Grocery Shopping</h1>
+        <p>Shop fresh produce, pantry essentials, and more from the comfort of your home</p>
+        <a href="#callus.html" class="shopping">Let's Go Shopping!</a>
+    </div>
+    <footer>
+        <img src="aseets\market-transformed.png" 
+                class="img" width="70" height="50">
+        <p> Terms of Service &nbsp;&nbsp; Privacy Policy</p>
+        <p>&copy; 2023 E-Groceries</p>
+    </footer> 
+</body>
+</html>

@@ -25,12 +25,12 @@
         <div class="flex-container">
           <section id="callUs">
             <article id="article">
-              <img class="img-slideshow" src="aseets\buah.jpg" width="600" height="500">
-              <img class="img-slideshow" src="aseets\inggridient.jpg" width="600" height="500">
-              <img class="img-slideshow" src="aseets\cooking set.jpg" width="600" height="500">
-              <img class="img-slideshow" src="aseets\seasoning.jpg" width="600" height="500">
-              <img class="img-slideshow" src="aseets\kitchen set.jpg" width="600" height="500">
-              <img class="img-slideshow" src="aseets\delivery.jpg" width="600" height="500">
+              <img class="img-slideshow" src="aseets\buah.jpg" width="500" height="500">
+              <img class="img-slideshow" src="aseets\inggridient.jpg" width="500" height="500">
+              <img class="img-slideshow" src="aseets\cooking set.jpg" width="500" height="500">
+              <img class="img-slideshow" src="aseets\seasoning.jpg" width="500" height="500">
+              <img class="img-slideshow" src="aseets\kitchen set.jpg" width="500" height="500">
+              <img class="img-slideshow" src="aseets\delivery.jpg" width="500" height="500">
               <h5>"Setiap hari beli sayur buah yang fresh disini"</h5>
             </article>
             <section id="profile">
@@ -56,12 +56,12 @@
           <section id="form">
             <h2 id="callus.html">Contact Us</h2>
             <h3>Sales will contact you 1x24 hours after we receive the data</h3>
-            <form action="#" method="POST" onsubmit="return validasi()">
+            <form id="form-id" action="#"  onsubmit="return validasi()">
               <label for="name">Your Name:</label>
               <input type="text" id="nama" name="name" placeholder="First and last name">
-              <label for="email">Email Address:</label>
+              <br><br><label for="email">Email Address:</label>
               <input type="text" id="email" name="email:" placeholder="example@email.com">
-              <label class="form1">What Are You Interested In?:</label>
+              <br><br><label class="form1">What Are You Interested In?:</label>
               <select id="interested" name="interested">
                 <option disabled selected value="">Select option</option>
                 <option value="Fresh Vegetable">Fresh Vegetable</option>
@@ -71,9 +71,7 @@
                 <option value="Kitchen Set">Kitchen Set</option>
                 <option value="Bunding Set">Bunding Set</option>
               </select>
-              
-              </select>
-              <button>Send</button>
+              <br><br><button id="submit">Send</button>
             </form>
           </section>
         </div>  

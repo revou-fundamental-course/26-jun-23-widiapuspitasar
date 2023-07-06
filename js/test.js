@@ -1,5 +1,5 @@
 
-
+// slide foto
 document.addEventListener("DOMContentLoaded", function() {
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -28,17 +28,28 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2000);
   });
   
-
+// fungsi validasi form
 function validasi() {
-    var nama = document.getElementById("nama").value;
-    var email = document.getElementById("email").value;
-    var interested = document.getElementById("interested").value;
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var interested = document.getElementById("interested").value;
 
-    if (nama === "" || email === "" || interested === "") {
-        alert('You must fill in the data completely!');
-    } else {
-        alert('Success!');
-    }
+  if (nama === "" || email === "" || interested === "") {
+      alert('You must fill in the data completely!');
+  } else if (!isValidEmail(email)) {
+      alert('Please enter a valid email address!');
+  } else {
+      alert('Success!');
+  }
 }
-var form = document.getElementById("form-id");
-form.addEventListener("submit", validasi);
+function isValidEmail(email) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+
+
+
+ 
+
+

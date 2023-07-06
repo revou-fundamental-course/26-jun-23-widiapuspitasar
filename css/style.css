@@ -363,8 +363,8 @@ body{
     border-radius: 8px;
     justify-content: center;
     align-content: center;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin:auto;
   }
 
@@ -374,14 +374,14 @@ body{
     flex-direction: column;
     align-content: center;
     width: 100%;
-    max-width: 450px;
-    height: 580px;
+    max-width: 500px;
+    height: 600px;
     border-radius: 8px;
     background-color: aliceblue;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px; 
+    margin-left: 50px;
+    margin-right: 50px; 
 }
 #form h2{
     margin-bottom: 0px;
@@ -416,7 +416,8 @@ button {
 /* Menambahkan profile yang ingin ditampikan  */
 #article h5{
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
+
 }
 #profile {
     display: flex;
@@ -425,7 +426,7 @@ button {
     align-content: center;
     margin: auto;
     width: 100%;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 #profile .profile-img {
@@ -437,7 +438,6 @@ button {
     font-size: 16px;
     align-items: center;
     text-align: left;
-
 }
 
 #profile h6 {
@@ -445,7 +445,7 @@ button {
     color: rgba(128, 128, 128, 0.692);
     font-size: 15px;
     text-align: left;
-    
+    align-content: center;
 }
 /* Menambahkan penjelasan */
 #describe {
@@ -474,21 +474,21 @@ ol{
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+  }
+
+
 .flexpackage {
     display: flex;
     flex-direction: row;
     border-bottom: 1px black;
     margin: auto;
     width: 100%;
-    max-width: fit-content;
+    max-width: max-content;
   }
 
  #vegetable,#fruit, #delivery {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0px;
  } 
 
@@ -519,13 +519,14 @@ ol{
 .flexpackage2 {
     display: flex;
     flex-direction: row;
-    max-width: 400%;
+    width: 100%;
+    max-width: max-content;
   }
 #kitchen,#kitchenset, #kitchenbunding{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
  }
 
 .star {

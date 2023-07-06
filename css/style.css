@@ -374,12 +374,11 @@ body{
     flex-direction: column;
     align-content: center;
     width: 100%;
-    max-width: 500px;
     height: 600px;
     border-radius: 8px;
     background-color: aliceblue;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px; 
 }
@@ -388,7 +387,7 @@ body{
     
 }
 #form h3{
-    margin-bottom: 50px
+    margin-bottom: 30px
 }
 #form > * {
     margin-left: 0px;
@@ -416,7 +415,8 @@ button {
 /* Menambahkan profile yang ingin ditampikan  */
 #article h5{
     width: 100%;
-    max-width: 300px;
+    margin:auto;
+    margin-top: 20px;
 
 }
 #profile {
@@ -438,6 +438,7 @@ button {
     font-size: 16px;
     align-items: center;
     text-align: left;
+    width: 100%
 }
 
 #profile h6 {
@@ -446,6 +447,7 @@ button {
     font-size: 15px;
     text-align: left;
     align-content: center;
+    width: 100%
 }
 /* Menambahkan penjelasan */
 #describe {
@@ -506,13 +508,15 @@ ol{
 
 #vegetable h3, #fruit h3, #delivery h3 {
     margin-bottom: 5px;
-    font-size: 16px;  
+    font-size: 16px;
+    width: 100%;  
 }
 
 #vegetable h4, #fruit h4, #delivery h4 {
     margin-top: 0;
     color: rgba(128, 128, 128, 0.692);
     font-size: 15px;
+    width: 100%
 }
 
 /* section our package kitchen*/
@@ -520,13 +524,13 @@ ol{
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: max-content;
   }
 #kitchen,#kitchenset, #kitchenbunding{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%
  }
 
 .star {
@@ -537,12 +541,14 @@ ol{
 #kitchen h3, #kitchenset h3, #kitchenbunding h3 {
     margin-bottom: 5px;
     font-size: 16px;  
+    width: 100%
 }
 
 #kitchen h4, #kitchenset h4, #kitchenbunding h4 {
     margin-top: 0;
     color: rgba(128, 128, 128, 0.692);
     font-size: 15px;
+    width: 100%
 }
 
 /* new section */

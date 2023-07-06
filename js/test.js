@@ -42,4 +42,3 @@ function validasi() {
 }
 var form = document.getElementById("form-id");
 form.addEventListener("submit", validasi);
-

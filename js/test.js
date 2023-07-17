@@ -1,32 +1,32 @@
 
-// slide foto
-document.addEventListener("DOMContentLoaded", function() {
-    var slideIndex = 1;
-    showDivs(slideIndex);
-  
-    function plusDivs(n) {
-      showDivs((slideIndex += n));
-    }
-  
-    function showDivs(n) {
-      var i;
-      var imgList = document.getElementsByClassName("img-slideshow");
-      if (n > imgList.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = imgList.length;
-      }
-      for (i = 0; i < imgList.length; i++) {
-        imgList[i].style.display = "none";
-      }
-      imgList[slideIndex - 1].style.display = "block";
-    }
-  
-    setInterval(function() {
-      plusDivs(1);
-    }, 2000);
-  });
+
+  // Slide Comment
+  document.addEventListener("DOMContentLoaded", function() {
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDives(n){
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var i;
+  var slideList = document.getElementsByClassName("slide");
+  if(n > slideList.length) slideIndex = 1;
+  else if(n < 1) slideIndex = slideList.length;
+
+  for(i = 0; i < slideList.length; i++){
+    slideList[i].style.display = "none";
+  }
+
+  slideList[slideIndex - 1].style.display = "block";
+}
+
+setInterval(()=>{
+  plusDives(1);
+},3000 );
+});
+
   
 // fungsi validasi form
 function validasi() {
@@ -47,9 +47,57 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+//  SMOOTH SCROLLING 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  
+  links.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute("href").slice(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});
 
+// slider our package
+document.addEventListener("DOMContentLoaded", function() {
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
 
- 
-
+});
 

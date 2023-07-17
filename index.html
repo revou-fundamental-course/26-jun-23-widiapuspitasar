@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>E-Groceries Shop</title>
     <script src="js/test.js"></script>
 </head>
 <body>
+  
     <header>
         <nav class="content">
             <img src="aseets\market-transformed.png" 
@@ -23,36 +25,70 @@
     </header>
     <main>
         <div class="flex-container">
-          <section id="callUs">
-            <article id="article">
-              <img class="img-slideshow" src="aseets\buah.jpg" width="500" height="500">
-              <img class="img-slideshow" src="aseets\inggridient.jpg" width="500" height="500">
-              <img class="img-slideshow" src="aseets\cooking set.jpg" width="500" height="500">
-              <img class="img-slideshow" src="aseets\seasoning.jpg" width="500" height="500">
-              <img class="img-slideshow" src="aseets\kitchen set.jpg" width="500" height="500">
-              <img class="img-slideshow" src="aseets\delivery.jpg" width="500" height="500">
-              <h5>"Setiap hari beli sayur buah yang fresh disini"</h5>
-            </article>
-            <section id="profile">
-              <img src="aseets/Profile-PNG-File.png" class="profile-img" width="50" height="50">
-              <div class="profile-info">
-                <h5>Florence Hughes</h5>
-                <div class="profile-subinfo">
-                  <h6>Ibu Rumah Tangga, 28</h6>
-                </div>
-            </section>
-            <section id="describe">
-                <p class="isi">Thank you for the opportunity to provide more information about our offer. We take pride in offering a comprehensive service or product that brings numerous benefits to our customers. Here are some key points to consider:</p>
-                <div class="number"> 
+          <div class="flex-row">
+            <section id="callUs">
+              <article id="article">
+                <div class="slide-container">
+                  <div class="slide">
+                    <img class="img-slideshow" src="aseets\buah.jpg" width="500" height="500">
+                    <div class="comment">
+                      <h5 class="comment-text">"Sayuran segar, buah-buahan berkualitas tinggi, dan bahan makanan lainnya tersedia dengan baik. Layanan pelanggan yang ramah juga menjadi nilai tambah!" </h5>
+                      <div class="comment-profile">
+                        <img src="aseets\profile 2.jpeg" class="profile-img" width="50" height="50">
+                        <div class="profile-info">
+                          <h5>Widia Puspitasari</h5>
+                          <h5 class="subprofil">CEO, 29</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img class="img-slideshow" src="aseets\delivery.jpg" width="500" height="500">
+                    <div class="comment">
+                      <h5 class="comment-text">"E-groceries adalah penyelamat di tengah pandemi! Saya bisa tetap memenuhi kebutuhan harian tanpa harus keluar rumah." </h5>
+                      <div class="comment-profile">
+                        <img src="aseets\profile 1.jpeg" class="profile-img" width="50" height="50">
+                        <div class="profile-info">
+                          <h5 >Alfian Arief Santoso</h5>
+                          <h5 class="subprofil">CEO, 28</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img class="img-slideshow" src="aseets\seasoning.jpg" width="500" height="500">
+                    <div class="comment">
+                      <h5 class="comment-text">"Saya sangat terkesan dengan kualitas produk yang disediakan oleh e-groceries. Sayuran segar dan buah-buahan berkualitas tinggi tersedia dengan baik." </h5>
+                      <div class="comment-profile">
+                        <img src="aseets\profile 3.jpeg" class="profile-img" width="50" height="50">
+                        <div class="profile-info">
+                          <h5 >Katrehine</h5>
+                          <h5 class="subprofil">Ibu Rumah Tangga, 32</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img class="img-slideshow" src="aseets\bunding set.jpg" width="500" height="500">
+                    <div class="comment">
+                      <h5 class="comment-text">"E-groceries adalah solusi terbaik bagi orang sibuk seperti saya. Saya dapat menghemat waktu berharga dengan memesan secara online. " </h5>
+                      <div class="comment-profile">
+                        <img src="aseets\profile 4.jpeg" class="profile-img" width="50" height="50">
+                        <div class="profile-info">
+                          <h5 >Gong Yoo</h5>
+                          <h5 class="subprofil">Aktor, 44</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
-                <ol type="1">
-                    <li><b>High-Quality:</b> Our service or product is crafted with utmost care and attention to detail.</li>
-                    <li><b>Customer Satisfaction:</b> Your satisfaction is our ultimate goal. We are committed to ensuring that you have a positive experience with our service or product.</li>
-                    <li><b>Competitive Pricing:</b> Our service or product is competitively priced, offering you a cost-effective solution without compromising on quality or performance.</li>
-                </ol>
+              </article>
             </section>
-          </section>
+
           <section id="form">
             <h2 id="callus.html">Contact Us</h2>
             <h3>Sales will contact you 1x24 hours after we receive the data</h3>
@@ -74,61 +110,79 @@
               <br><br><button id="submit">Send</button>
             </form>
           </section>
-        </div>  
+        </div>   
+
+          <section id="describe">
+            <p class="isi">Thank you for the opportunity to provide more information about our offer. We take pride in offering a comprehensive service or product that brings numerous benefits to our customers. Here are some key points to consider:</p>
+            <ol type="1">
+                <li><b>High-Quality:</b> Our service or product is crafted with utmost care and attention to detail.</li>
+                <li><b>Customer Satisfaction:</b> Your satisfaction is our ultimate goal. We are committed to ensuring that you have a positive experience with our service or product.</li>
+                <li><b>Competitive Pricing:</b> Our service or product is competitively priced, offering you a cost-effective solution without compromising on quality or performance.</li>
+            </ol>
+          </section>
+        
+      </div>  
       </main>
       <div id="newContainer">
         <h1 id="ourpackage.html">OUR PACKAGE</h1>
     </div>
-    <div class="flexpackage">
-        <section id="vegetable"> 
-            <img src="aseets\hint.png" class="hint" width="60" height="50">
-            <div>
-                <h3> Fresh vegetable</h3>
-                <h4>Fresh vegetables direct from the best agricultural sources</h4>
-            </div>
-        </section>
-        <section id="fruit"> 
-            <img src="aseets\hint.png" class="hint" width="60" height="50">
-            <div>
-                <h3> Fresh fruit</h3>
-                <h4>Fresh fruits direct from the best agricultural sources</h4>
-            </div>
-        </section>
-        <section id="delivery">
-            <img src="aseets\hint.png" class="hint" width="60" height="50">
-            <div>
-                <h3> Instan Delivery</h3>
-                <h4>Sent instantly by couriers who have been trained with SOP to maintain your shopping conditions</h4>
-            </div>
-        </section >
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="fixed-image" src="aseets\buah.jpg" alt="buah" width="300px" height="350px"/>
+          <div class="text-swiper">
+            <p><b> Fresh Vegetables and Fruits:</b> <br> Fresh vegetables and fruit direct from the best agricultural sources. </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="fixed-image" src="aseets\delivery.jpg" alt="dilivery" width="300px" height="350px"/>
+          <div class="text-swiper">
+            <p><b> Instan Delivery:</b> <br>Sent instantly by couriers who have been trained with SOP to maintain your shopping conditions.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="fixed-image"  src="aseets\seasoning.jpg" alt="seasoning" width="300px" height="350px" />
+          <div class="text-swiper">
+            <p><b> Kitchen Ingredient:</b> <br>  Complete kitchen ingredients for your cooking needs. </p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <img class="fixed-image"  src="aseets\kitchen set.jpg " alt="kitchenset" width="300px" height="350px"/>
+          <div class="text-swiper">
+            <p><b>Kitchen Set:</b><br>All kinds of cooking tools to help you cook.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="fixed-image"  src="aseets\bunding set.jpg" alt="bunding"  width="300px" height="350px"/>
+          <div class="text-swiper">
+            <p><b>Bunding Set:</b><br>Confused what to cook? Packages are available for you to cook in your kitchen.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide"> 
+          <img class="fixed-image"  src="aseets\cooking tools.jpg" alt="cooking" width="300px" height="350px"/>
+          <div class="text-swiper">
+            <p><b>Cooking Set:</b><br>upgrade your cooking items with us.</p>
+          </div>
+        </div>
+             
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next" style="right: 20px;"></div>
+      <div class="swiper-button-prev" style="left: 20px;"></div>
+
+      
     </div>
-    <br>
-    <br>
-    <div class="flexpackage2">
-        <section id="kitchen">
-            <img src="aseets\star.png" class="star" width="50" height="50">
-            <div>
-                <h3>Kitchen Ingredient</h3>
-                <h4>Complete kitchen ingredients for your cooking needs</h4>
-            </div>
-        </section>
-        <section id="kitchenset">
-            <img src="aseets\star.png" class="star" width="50" height="50">
-            <div>
-                <h3>Kitchen Set</h3>
-                <h4>All kinds of cooking tools to help you cook</h4>
-            </div>
-        </section>
-        <section id="kitchenbunding">
-            <img src="aseets\star.png" class="star" width="50" height="50">
-            <div>
-                <h3>Bunding Set</h3>
-                <h4>Confused what to cook? Packages are available for you to cook in your kitchen</h4>
-            </div>
-        </section>
-     <br>
-     <br>
-    </div>
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <div id="closing">
         <h1>Experience the Convenience of Online Grocery Shopping</h1>
         <p>Shop fresh produce, pantry essentials, and more from the comfort of your home</p>
@@ -140,5 +194,6 @@
         <p> Terms of Service &nbsp;&nbsp; Privacy Policy</p>
         <p>&copy; 2023 E-Groceries</p>
     </footer> 
+
 </body>
 </html>

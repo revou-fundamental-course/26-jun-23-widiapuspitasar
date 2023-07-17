@@ -1,5 +1,4 @@
 
-
   // Slide Comment
   document.addEventListener("DOMContentLoaded", function() {
 var slideIndex = 1;
